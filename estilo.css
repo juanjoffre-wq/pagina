@@ -28,20 +28,31 @@ header {
     border-radius: 50%;
 }
 
+/* Todo lo referen del nav del menu pantallas normales*/
 
 nav {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row; 
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Para celulares  */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
 }
 
 
@@ -70,7 +81,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* BOTON */
+/* Botones es el estilo */
 .btn {
     padding: 12px 25px;
     background-color: #27ae60;
@@ -84,7 +95,7 @@ nav a:hover {
     background-color: #1e8449;
 }
 
-/* SECCIONES */
+/* Eata parte es la des ecciones dentro del main */
 .seccion {
     padding: 50px 20px;
     text-align: center;
@@ -144,7 +155,7 @@ button:hover {
     background-color: #145a32;
 }
 
-/* FOOTER */
+/* Ea como el pie de pagina*/
 footer {
     background-color: #145a32;
     text-align: center;
