@@ -12,6 +12,8 @@
     <div class="header-contenido">
         <img src="img/logo1.jpg" alt="Logo" class="logo">
         <h2>Librería Agrupa</h2>
+        <!-- Misión 1: este botón enciende y apaga el día. -->
+        <button type="button" id="btn-tema" class="boton-modo">☀️ Modo día</button>
     </div>
 
     <nav>
@@ -72,6 +74,9 @@
 <footer>
     <p>&copy; 2026 Librería Agrupa - Todos los derechos reservados</p>
 </footer>
-
+  <!-- El script va al FINAL, justo antes de cerrar el body:
+       así el navegador ya leyó todo el HTML y querySelector
+       sí encuentra los botones. Si lo pones arriba, no los halla. -->
+  <script src="script.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ header {
 
 .header-contenido {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 15px;
 }
@@ -27,6 +27,20 @@ header {
     width: 60px;
     border-radius: 50%;
 }
+
+/* 3b. Botón de modo día/noche (misión 1) */
+.boton-modo {
+  margin-top: 10px;
+  background-color: #069b55;
+  color: #1a1208;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font: inherit;
+  font-weight: bold;
+}
+
+
 
 /* Todo lo referen del nav del menu pantallas normales*/
 
@@ -47,13 +61,6 @@ nav a {
     transition: all 0.3s ease;
 }
 
-/* Para celulares  */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column; 
-        align-items: center;
-    }
-}
 
 
 .hero {
@@ -160,4 +167,126 @@ footer {
     background-color: #145a32;
     text-align: center;
     padding: 15px;
+}
+
+
+
+
+/*  MODO CLARO todo colococar y modificar para claro*/
+body.claro {
+background-color: #f4f7f2;
+color: #1b2a1e;
+transition: all 0.3s ease;
+}
+
+
+body.claro header {
+background-color: #1b5e20;
+color: #ffffff;
+}
+
+body.claro header h2 {
+color: #e8f5e9;
+}
+
+
+body.claro nav {
+background-color: #2e7d32;
+}
+
+body.claro nav a {
+color: #ffffff;
+transition: 0.3s;
+}
+
+body.claro nav a:hover {
+color: #c8e6c9;
+}
+
+
+body.claro .hero {
+background-color: #ffffff;
+border: 1px solid #cfe0d1;
+}
+
+body.claro .hero h1 {
+color: #1b5e20;
+}
+
+body.claro .hero p {
+color: #33513a;
+}
+
+
+body.claro .btn {
+background-color: #2e7d32;
+color: #ffffff;
+border: none;
+transition: 0.3s;
+}
+
+body.claro .btn:hover {
+background-color: #1b5e20;
+}
+
+
+body.claro .seccion {
+background-color: #ffffff;
+border: 1px solid #dfe8e1;
+}
+
+body.claro .seccion h2 {
+color: #1b5e20;
+}
+
+
+body.claro form label {
+color: #33513a;
+}
+
+body.claro form input,
+body.claro form textarea {
+background-color: #ffffff;
+border: 1px solid #cfe0d1;
+color: #1b2a1e;
+padding: 8px;
+border-radius: 5px;
+}
+
+body.claro form input:focus,
+body.claro form textarea:focus {
+outline: none;
+border-color: #2e7d32;
+}
+
+
+body.claro form button {
+background-color: #2e7d32;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+body.claro form button:hover {
+background-color: #1b5e20;
+}
+
+
+body.claro footer {
+background-color: #1b5e20;
+color: #e3f0e4;
+}
+
+
+
+
+
+/* Para celulares  */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
 }
