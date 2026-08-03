@@ -12,13 +12,34 @@
         <a href="#cafe">Nuestro café</a>
         <a href="#contacto">Contacto</a>
     </nav>
-</header>
-   
+</header>  
 <body>
-    <main>
-     <section class="seccion1">
-
-     </section>
-    </main>   
+    <main class="contenidotodo">
+    <section id="cafe" class="clase1">
+    <h2>Nuestro café</h2>
+        <p>Disfruta el mejor café preparado con pasion y calidad</p>
+        <ul>
+            <li>Café americano - Bs 12</li>
+            <li>Capuchino - Bs 18</li>
+            <li>Submarino - Bs 15</li>
+        </ul>
+    </section>
+    <section id="contacto" class="clase2">
+    <h2>Haz tu pedido</h2>
+        <form>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" required>
+            <label for="pedido">Tu pedido</label>
+            <textarea id="pedido"></textarea>
+        </form>
+        <button type="button" id="btn-confirmar">Confirmar pedido</button>
+        <p id="mensaje" class="oculto"></p>
+    </section>
+</main>
+<footer>
+    <p>Parcial 1-Juan Erasmo Joffre Perez- 3 de agosto de 2026</p>
+</footer>   
 </body>
 </html>
