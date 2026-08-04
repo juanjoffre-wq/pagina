@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f1ee;
+    margin: 0;
+}
+.contenidotodo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.clase1 {
+    background: white;
+    padding: 20px;
+    border: 2px solid #d9a066;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.clase2 {
+    background: white;
+    padding: 20px;
+    border: 2px solid #d9a066;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d9a066;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+#mensaje {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #d9a066;
+}
+.oculto {
+    display: none;
+}
+footer {
+    text-align: center;
+    background-color: #6f4e37;
+    color: white;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    nav {
+    display: block;
+    text-align: center;
+    }
+    nav a {
+    display: block;
+    margin: 10px 0;
+    }
+}
