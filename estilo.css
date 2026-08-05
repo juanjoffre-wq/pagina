@@ -256,6 +256,35 @@ body.claro footer {
     color: #e3f0e4;
 }
 
+.aviso {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 14px;
+    display: none;
+}
+
+.aviso.error {
+    display: block;
+    color: #ff4d4d;
+}
+.aviso.exito {
+    display: block;
+    color: #4CAF50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Para dispositivos moviles */
 
 @media (max-width: 600px) {
