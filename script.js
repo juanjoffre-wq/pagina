@@ -22,16 +22,15 @@ const avisoPedido = document.querySelector("#error-pedido");
 
 
 function revisarPedido(event) {
-    event.preventDefault();
     const nombre = document.querySelector("#nombre").value;
     const correo = document.querySelector("#correo").value;   
-
-
 if (nombre === "") {
+    event.preventDefault();
     avisoPedido.textContent = "Falta tu nombre, caserito.";
     avisoPedido.classList.add("error");
     avisoPedido.classList.remove("exito");
 } else if (correo.includes("@") === false) {
+    event.preventDefault();
     avisoPedido.textContent = "Ese correo no parece correo: le falta el @.";
     avisoPedido.classList.add("error");
     avisoPedido.classList.remove("exito");
