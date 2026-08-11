@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELADERÍA DOÑA NIEVE</title>
+</head>
+<header>
+    <h1>Heladería Doña Nieve</h1>
+    <p>Donde el sabor se encuentra con la alegría y se comparte momentos inolvidables</p>
+</header>
+<body>
+<main>
+<form id="form-helados" novalidate method="post" action="procesar.php">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <br>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+    <br>
+    <br>
+    <label for="sabores">Sabor de helado:</label>
+    <textarea id="sabores" name="sabores" rows="4" placeholder="Escribe los sabores que deseas"></textarea>
+    <br>
+    <br>
+    <button type="submit">Enviar mi pedido</button>
+    <p id="aviso-helados" class="aviso"></p>
+</form>
+</main>
+<footer>
+    <p>Parcial 2 - Juan Erasmo Joffre Perez - 11 de agosto de 2026</p>
+</footer>   
+</body>
+</html>
